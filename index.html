@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="mobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" >
+        <div class="formulario" id="datos_cliente">
+            <h3 class="colorear">Datos del Cliente</h3>
+            <div class="cuerpo_datos_cliente">
+                <label for="">Tipo de Cliente</label>
+            <select name="" id="tipo_cliente">
+                <option value="V">V</option>
+                <option value="J">J</option>
+                <option value="E">E</option>
+                <option value="G">G</option>
+            </select>
+
+            <div class="form__div">
+          
+              <input type="text" class="form__input" placeholder=" " id="cedula" autocomplete="off">
+              <label for="" class="form__label">Cedula/Rif</label>
+            </div>
+            <div class="form__div">
+          
+              <input type="text" class="form__input" placeholder=" " id="nombre_completo" autocomplete="off">
+              <label for="" class="form__label">Nombre y Apellido / Razon social</label>
+            </div>
+            
+            <div class="form__div">
+          
+              <input type="text" class="form__input" placeholder=" " id="telefono" autocomplete="off">
+              <label for="" class="form__label">Telefono Fijo</label>
+            </div>
+            <div class="form__div">
+          
+              <input type="text" class="form__input" placeholder=" " id="celular" autocomplete="off">
+              <label for="" class="form__label">Telefono Celular</label>
+            </div>
+            <div class="form__div">
+          
+              <input type="text" class="form__input" placeholder="" id="correo" autocomplete="off">
+              <label for="" class="form__label">Correo Electronico</label>
+            </div>
+            <div class="form__div">
+          
+              <input type="text" class="form__input" placeholder=" " id="direccion" autocomplete="off">
+              <label for="" class="form__label">Direccion</label>
+            </div>
+
+
+            <div class="form__div">
+              <input type="text" class="form__input" placeholder=" " id="ruta_referencia" autocomplete="off">
+              <label for="" class="form__label">Ruta de Referencia</label>
+            </div>
+            <hr>
+            <div class="cuerpo_cantidad_equipos">
+              <div class="opciones">
+                  <table class="tabla_checks1">
+                    <tr class="tr_a">
+                      <td><label for="">Aire Acondicionado</label></td>
+                      <td><input type="checkbox" id="c_aire_acondicionado"></td>
+                    </tr>
+                    <tr class="tr_b">
+                      <td><label for="">Refrigeracion</label></td>
+                      <td><input type="checkbox" id="c_refrigeracion"></td>
+                    </tr>
+                    <tr class="tr_a">
+                      <td><label for="">Ductos</label></td>
+                      <td><input type="checkbox" id="c_ducto_aire"></td>
+                    </tr>
+                    <tr class="tr_b">
+                      <td><label for="">Almacenamiento (Caba Cuarto)</label></td>
+                      <td><input type="checkbox" id="c_caba_cuarto"></td>
+                    </tr>
+                    <tr class="tr_a">
+                      <td><label for="">Sistema Chiller</label></td>
+                      <td> <input type="checkbox" id="c_sistema_chiller"></td>
+                    </tr>
+                  </table>
+                  <hr>
+
+                  
+                  <div class="label_container">
+                      
+                      
+                  </div>
+                  <div class="label_container">
+                      
+                      
+                  </div>
+                  <div class="label_container">
+                      
+                     
+                  </div>
+              </div>
+
+
+              <div class="equipos" id="equipos">
+                
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                  
+                    <!-- ITEM1 \--> 
+                    <div class="accordion-item item_acordeon_aire">
+                      <div class="cantidad_container">
+                        <label for="">Cantidad</label>
+                        <input type="text" id="cantidad_aire">
+                    </div>
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            <div class="acordeon_header">
+                                <h5>Aire Acondicionado</h5>
+                              
+                            </div>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body acordion_body_aire">
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ITEM2 \--> 
+                    <div class="accordion-item item_acordeon_refrigeracion">
+                      <div class="cantidad_container">
+                        <label for="">Cantidad</label>
+                        <input type="text" id="cantidad_refrigeracion">
+                    </div>
+                      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            <div class="acordeon_header">
+                                <h5>Refrigeracion</h5>
+                                
+                            </div>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body acordion_body_refrigeracion">
+                         
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ITEM3 \--> 
+                    <div class="accordion-item item_acordeon_ducto">
+                      <div class="cantidad_container">
+                        <label for="">Cantidad</label>
+                        <input type="text" id="cantidad_ductos">
+                    </div>
+                      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <div class="acordeon_header">
+                                <h5>Ductos</h5>
+                               
+                            </div>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body acordion_body_ductos">
+                         
+                        </div>
+                      </div>
+                    </div>
+                  <!-- ITEM4 \--> 
+                    <div class="accordion-item item_acordeon_caba_cuarto">
+                        <div class="cantidad_container">
+                            <label for="">Cantidad</label>
+                            <input type="text" id="cantidad_caba_cuarto">
+                        </div>
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                            <div class="acordeon_header">
+                                <h5>Almacenamiento (Caba Cuarto)</h5>
+                                    
+                            </div> 
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                          <div class="accordion-body acordion_body_caba_cuarto">
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ITEM55\--> 
+                      <div class="accordion-item item_acordeon_chiller">
+                        <div class="cantidad_container">
+                          <label for="">Cantidad</label>
+                          <input type="text" id="cantidad_chiller">
+                      </div>
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                            <div class="acordeon_header">
+                                <h5>Sistema Chiller</h5>
+                                
+                            </div>
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                          <div class="accordion-body acordion_body_chiller">
+                           
+                          </div>
+                        </div>
+                      </div>
+                      
+                
+                
+                
+                
+                
+                
+                </div>
+                <hr>
+                      <div class="div_button">
+                        <button type="submit" id="enviar">Enviar</button>
+                      </div>
+            </div>
+        </div>
+
+
+
+       
+       
+      
+       
+        </div>
+        <hr>
+    
+    
+        
+        </div>
+       
+    </form>
+
+    
+ 
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+

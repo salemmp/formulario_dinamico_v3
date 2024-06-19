@@ -1,0 +1,198 @@
+:root{
+    --azul_claro:#6BD2DB;
+    --morado_claro:#6B8BDB;
+    --morado_oscuro:#5c58db;
+}
+
+
+
+.item_acordeon_aire{
+    border: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+input{
+    outline: none;
+}
+select{
+    margin-bottom: 40px;
+    border-radius: 5px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    padding-left: 10px;
+    overflow: hidden;
+    outline: none;
+}
+
+body{
+    background-color: rgb(241, 241, 241);
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.24);
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+    min-height: 50vh;
+    padding: 50px;
+}
+
+.cartas{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.342);
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.equipos{
+    
+    width: 100%;
+ 
+    
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.div_button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button{
+
+    outline: none;
+    border: none;
+    padding: 20px;
+    color: white;
+    width: 40%;
+    border-radius: 10px;
+   
+    background-color:var(--morado_oscuro);
+    margin-bottom: 20px;
+    transition: all .3s;
+}
+
+button:hover{
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.438);
+}
+
+.cuerpo_cartas{
+    display: flex;
+    flex-direction: column;
+  
+    
+    
+    
+}
+.cantidad_container{
+    width: 100%;
+    background-color: #f1f1f1;
+    color: rgb(0, 0, 0);
+    padding: 2px;
+    overflow: hidden;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+}
+
+
+.cuerpo_datos_cliente{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+
+.cuerpo_cantidad_equipos{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 20px;
+    width: 100%;
+   
+
+}
+
+
+.acordeon_header{
+    display: flex;
+    gap: 80px;
+    width: 100%;
+}
+.acordion{
+    width: 100%;
+}
+
+
+.accordion-item{
+    display: none;
+    width: 100%;
+}
+
+.container_capacidad{
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    margin-bottom: 20px;
+}
+.tabla_checks1{
+    width: 100%;
+    color: rgb(49, 49, 49);
+}
+
+.tabla_checks1 tr td input{
+    transform: scale(1.2);
+}
+.tabla_checks1 tr td{
+    
+    padding: 10px;
+}
+
+
+.tr_a{
+    background-color: #ffffff;
+}
+
+.tr_b{
+    background-color: #9b8afa;
+    color:white;
+    
+}
+
+textarea{
+    outline: none;
+}
+
+
+
+.container_servicio_adicional_aire{
+    display: none;
+
+    
+}
+.container_servicio_adicional_chiller{
+    display: none;
+}
+.text_area{
+    display: none;
+}

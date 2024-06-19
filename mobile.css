@@ -1,0 +1,12 @@
+@media(width<700px){
+    body{
+        background-color: black;
+    }
+    .formulario{
+        margin-top: 0px;
+        width: 100%;
+    }
+    .cuerpo_datos_cliente{
+        width: 100%;
+    }
+}
